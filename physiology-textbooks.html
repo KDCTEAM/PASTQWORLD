@@ -1,0 +1,289 @@
+<!DOCTYPE html><html lang="en">
+<head> <title>Pastqworld</title> <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<body>
+<header>
+	<div class="taskbar">
+		<input type="checkbox" id="checkbox">
+		<div class="toggle">
+			<label for="checkbox">
+				<span class="top_line common">&#124</span>
+				<span class="middle_line common">&#124</span>
+				<span class="bottom_line common">&#124</span>
+			</label>
+		</div>
+		<div class="slide">
+			<center>
+				<img src="/storage/emulated/0/code/img/icon3.jpg" class="pqwtoggleicon">
+				<p class="pqwname">Pastqworld</p>
+				<br>
+				<br><br><br>
+				<p><a href="#fchi" class="Subscribe">Subscribe</a></p>
+				<br><br><br>
+				<p><a href="#fchi"  class="home">Home</a></p>
+			</center>
+		</div>
+	</div>
+	<div class="sitewholename" >
+		<img src="/storage/emulated/0/code/img/pqwicon.jpg" class="pqwheadicon">
+		<a href="#"  class="pqwname">Pastqworld</a>
+	</div>
+	</header>
+	<br>
+	<div class="scholarshipheadnote">
+	<p class="pone">physiology Textbooks</p>
+	<p> Free physiology textbooks to aid your studies with</p>
+	</div>
+<center>
+	<input type="text" placeholder="search universities.." id="searchbar">
+</center>
+<center>
+<div class="chi" id="fchi">
+	<li>
+		<img src="ganong's-medical-physiology.jpg" class="scholarshipimg">
+		<center class="scholarshipcountry" id="fscholarshipcountry" ><p>ganong's review Of medical physiology</p></center>
+		<p class="scholarshipnote"  id="fscholarshipnote">physiology textbook by kim e. barett and others</p>
+		<a href="https://medicotime.com/ganongs-review-of-medical-physiology-pdf-download/" class="scholarshipapplya"><p class="scholarshipapplyp">apply <span>&#x2192</span></p></a>
+	</li>
+	<li>
+		<img src="essentials-of-medical-physiology.jpg" class="scholarshipimg">
+		<center class="scholarshipcountry"  id="fscholarshipcountry" ><p>essentials Of medical physiology</p></center>
+		<p class="scholarshipnote"  id="fscholarshipnote">physiology textbook by k. sembulingam and prema sembulingam</p>
+		<a href="https://medicotime.com/essentials-of-medical-physiology-pdf-download/" class="scholarshipapplya"><p class="scholarshipapplyp">apply <span>&#x2192</span></p></a>
+	</li>
+</div>
+</center>
+</body>
+
+
+
+<style type="text/css">
+	body{
+	background : #fafbff ;
+	margin : 0
+	}
+	header {
+	background : #d9f1fe ;
+	height : 9vh ;
+	position : fixed ;
+	width : 100% ;
+	z-index: 999;
+	}
+	.sitewholename{
+	padding-left : 10px ;
+	padding-top : 15px ;
+	}
+	.taskbar {
+	}
+	.slide .pqwname{
+	font-weight : bold ;
+	font-size: 25px ;
+	margin-left : -10px 
+	}
+	.slide .pqwtoggleicon{
+	border-radius : 100%;
+	height : 30px;
+	width: 30px;
+	float : left ;
+	margin : -1px -175px -10px 105px
+	}
+	.slide center .Subscribe{
+	width : 100px ;
+	background : #d9f1fe ;
+	border-radius : 25px ;
+	text-align:center ;
+	padding : 10px 60px;
+	color : #000;
+	font-size : 20px ;
+	font-weight : 600;
+	text-transform :capitalize;
+	margin-top:100px ;
+	text-decoration : none ;
+	}
+	.slide center .home{
+	width : 140px ;
+	background : #d9f1fe ;
+	border-radius : 25px ;
+	text-align:center ;
+	padding : 10px 75px;
+	color : #000;
+	font-size : 20px ;
+	font-weight : 600;
+	text-transform:capitalize ;
+	text-decoration:none 
+	}
+	.slide {
+	height : 99vh;
+	width : 100%;
+	position : fixed;
+	background : #fff ;
+	transition: 0.5s ease;
+	box-shadow: 0 0 1px 4px #f5f5f5 ;
+	display : none ;
+	margin-top: 4px ;
+	
+	}
+	.slide center {
+	margin-top : 70px 
+	}
+	#checkbox {
+	display : none ;
+	visibility :hidden;
+	}
+	.toggle .top_line{
+	top: 30%;
+	left : 50%;
+	transform :translate(-50%, -50%)
+	}
+	.toggle .middle_line{
+	top: 50%;
+	left : 50%;
+	transform :translate(-50%, -50%);
+	margin:-8px 
+	}
+	.toggle .bottom_line{
+	top: 70%;
+	left : 50%;
+	transform :translate(-50%, -50%);
+	}
+	.toggle {
+	float : right ;
+	transform : rotate(90deg);
+	font-weight : bold ;
+	font-size : 35px;
+	cursor :pointer;
+	position : absolute;
+	right : 25;
+	top : 7 ;
+	z-index: 99999;
+	}
+	#checkbox:checked ~ .toggle{
+	position : fixed ;
+	top : 20 ;
+	right : -16
+	}
+	#checkbox:checked ~ .toggle .top_line {
+	left: 20px;
+	transform : rotate(135deg);
+	position : absolute;
+	margin-top : 40px ;
+	}
+	#checkbox:checked ~ .toggle .middle_line {
+	left: 2px;
+	top : 14px;
+	transform:rotate(45deg);
+	display : none ;
+	position : absolute 
+	}
+	#checkbox:checked ~ .toggle .bottom_line {
+	left: 2px;
+	top : 14px;
+	margin : 19px ;
+	transform : rotate(45deg);
+	position : absolute;
+	}
+	#checkbox:checked ~ .slide {
+	display : block ;
+	}
+	.pqwheadicon{
+	border-rdius : 100%;
+	height : 30px;
+	width: 30px;
+	float : left ;
+	margin-left : 5px 
+	}
+	.sitewholename .pqwname{
+	font-size : 25px ;
+	font-weight : bolder;
+	margin-top : 14px ;
+	color : #000;
+	text-decoration : none 
+	}
+	#searchbar{
+	width : 87.5%;
+	height : 5vh;
+	border-radius : 10px ;
+	padding-left : 25px;
+	border:1px solid #1da1f3 ;
+	font-size : 14px ;
+	outline: none;
+	margin-bottom : 50px 
+	}
+	.scholarshipheadnote {
+	font-size : 25px ;
+	margin : 80px 0 15px 0 ;
+	text-align : center;
+	text-transform: capitalize;
+	padding : 0 28px
+	}
+	.scholarshipheadnote .pone{
+	font-weight : bold ;
+	}
+	.chi li{
+	width: 92%;
+	height : 70vh;
+	margin : 50px 0;
+	border-radius : 5px ;
+	box-shadow: 1px 1px 14px #d9d9d9;
+	list-style: none;
+	}
+	.scholarshipimg {
+	width : 100% ;
+	height : 50% ;
+	border-radius : 5px 5px 0 0;
+	
+	}
+	.scholarshipcountry{
+	margin:12px ;
+	font-size : 18px ;
+	text-transform : capitalize ;
+	font-weight : 550
+	}
+	.scholarshipnote{
+	margin:12px ;
+	text-align : left ;
+	text-transform: capitalize;
+	font-size : 14px ;
+	font-weight : 450 ;
+	margin-bottom : 60px 
+	}
+	.scholarshipapplya{
+	border-radius :0 0 5px 5px ;
+	font-weight : bold ;
+	text-transform : capitalize ;
+	text-decoration : none ;
+	color : #000;
+	text-align:center 
+	}
+	.scholarshipapplyp{
+	color : #000;
+	background : #83d1fc;
+	padding : 10px ;
+	}
+
+	@media screen and (min-width:769px) {
+		#fchi li{
+		width: 40%;
+		height : 70vh;
+		margin : 50px 0;
+		border-radius : 5px ;
+		box-shadow: 1px 1px 14px #d9d9d9;
+		list-style: none;
+		font-size: medium;
+		}
+		#fchi li:nth-child(odd){
+			float: right;
+			margin-right: 5%;
+		}
+		#fchi li:nth-child(even){
+			float: left;
+			margin-left: 5%;
+		}
+		#fscholarshipcountry{
+			font-size : 23px ;
+			margin: 15px;
+		}
+		#fscholarshipnote{
+			font-size : 17px;
+			margin: 20px;
+		}
+</style>
