@@ -1,0 +1,691 @@
+<style>
+    body {
+	    font-family: 'Open Sans', sans-serif;
+	    margin : 0 ;
+	    background : #fafbff 
+	}
+    #top-button a{
+		width : 30%;
+		box-shadow : 0 0 10px 1px #ccc;
+		padding : 30px ;
+        text-transform: capitalize;
+        font-size: larger;
+		margin : 20px 5px ;
+		border-radius : 10px ;
+		text-decoration: none;
+		color: black;
+		cursor: pointer;
+		text-align : center ;
+		font-weight : bold 
+	}
+	#top-button a:nth-child(odd){
+			float: left ;
+			margin-left: 5%;
+		}
+	#top-button a:nth-child(even){
+			float: right ;
+			margin-right: 5%;
+		}
+	@media screen and (min-width:769px){
+		#top-button a{
+			width: 30%;
+		}
+		#top-button a:nth-child(odd){
+			margin-left: 7%;
+		}
+		#top-button a:nth-child(even){
+			margin-right: 7%;
+		}
+	}
+    .question-section{
+        margin-top: 50px;
+    }
+    .question-option-container {
+        margin-top: 6px;
+        margin-bottom: 6px
+    }
+
+    .question-option {
+        display: inline-block;
+        background-color: #fff;
+        border: 1px solid #1da1f3;
+        padding: 3px 10px;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 50%;
+        height: 20px;
+        width: 10px;
+    }
+
+    .question-number {
+        display: inline-block;
+        background-color: #1da1f3;
+        color: #fafafa;
+        width: 30px;
+        height: 25px;
+        font-weight: 700;
+        padding: 6px 0 0;
+        text-align: center;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    .Qcard span {
+        margin: 8px 0 0 10px;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+
+    li {
+        list-style: none;
+        float: left;
+    }
+
+    #qsection {
+        display: block;
+        background: #fff;
+        width: 100%;
+    }
+
+    .questiontext {
+        line-height: 50px;
+    }
+
+    .question p {
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    .Question-card {
+        background: #fff;
+        border: thin solid #1da1f3;
+        margin: 5px;
+        padding: 8px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .answer {
+        display: none;
+        margin: 10px;
+    }
+
+    .answer p {
+        line-height: 20px;
+    }
+
+    #check-one {
+        display: none;
+    }
+
+    #check-one:checked~.answer {
+        display: block;
+    }
+    #check-two {
+        display: none;
+    }
+
+    #check-two:checked~.answer {
+        display: block;
+    }
+
+    #check-three {
+        display: none;
+    }
+
+    #check-three:checked~.answer {
+        display: block;
+    }
+
+    #check-four {
+        display: none;
+    }
+
+    #check-four:checked~.answer {
+        display: block;
+    }
+    #check-five {
+        display: none;
+    }
+
+    #check-five:checked~.answer {
+        display: block;
+    }
+    #check-six {
+        display: none;
+    }
+
+    #check-six:checked~.answer {
+        display: block;
+    }
+    #check-seven {
+        display: none;
+    }
+
+    #check-seven:checked~.answer {
+        display: block;
+    }
+    #check-eight {
+        display: none;
+    }
+
+    #check-eight:checked~.answer {
+        display: block;
+    }
+    #check-nine {
+        display: none;
+    }
+
+    #check-nine:checked~.answer {
+        display: block;
+    }
+    #check-ten {
+        display: none;
+    }
+
+    #check-ten:checked~.answer {
+        display: block;
+    }
+
+    #viewans {
+        margin: -10px 30px 20px 0;
+        background: #1da1f3;
+        padding: 5px 10px;
+        border-radius: 5px;
+        place-items:center;
+        color: #fff;
+        float: right;
+    }
+
+</style>
+
+<body>
+<section id="top-button">
+    <a href="#">previous</a>
+    <a href="#">next</a>
+</section>
+<br><br><br><br><br><br>
+<section class="question-section" style="height: auto !important;">
+
+ <!-- QUESTION #BEGINING -->
+    <div class="Question-card">
+        <div class="question-container" id="question-container">
+            <span class="question-number">1</span>
+            <p class="question-text">A second alkanol can be oxidized to give an</p>
+        </div>
+        <!-- OPTIONS SECTION #BEGINING -->
+        <div class="question-option-container">
+          <!-- OPTION A -->
+            <span class="question-option"> A </span>
+            <p>alkanone</p>
+        </div>
+                    <!-- OPTION B -->
+        <div class="question-option-container">
+            <span class="question-option">B</span>
+            <p>alkyne</p>
+        </div>
+                    <!-- OPTION C -->
+        <div class="question-option-container">
+            <span class="question-option">C</span>
+            <p>alkanoic acid</p>
+        </div>
+                    <!-- OPTION D-->
+        <div class="question-option-container">
+            <span class="question-option">D</span>
+            <p>alkanal</p>
+        </div>
+        <!-- OPTIONS #END -->
+
+        <!-- BUTTON TO DISPLAY THE ANSWER AND REVIEW/ COMMENT -->
+        <input type="checkbox" id="check-one">
+        <label for="check-one" id="viewans">
+            <b class="fa fa-info"> Answer </b>
+        </label>
+
+            <!-- ANSWER SECTION -->
+        <div class="answer">
+            <hr />
+            <p><strong>Correct Option:</strong> A</p>
+            <br>
+            <!-- COMMENT/ SOLUTION TO THE ANSWERS -->
+            <strong>Solution</strong>
+            <p>With a suitable oxidising agent (such as acidified dichromate solution, or, acidified permanganate solution),&nbsp;<strong>secondary alkanols</strong>&nbsp;(alcohols)&nbsp;<strong>can be oxidised</strong>&nbsp;to alkanones (ketones).</p>
+        </div>
+        <br>
+    </div>
+                <!-- QUESTION # END -->
+                <!-- QUESTION #BEGINING -->
+    <div class="Question-card">
+        <div class="question-container" id="question-container">
+            <span class="question-number">2</span>
+            <p class="question-text">A second alkanol can be oxidized to give an</p>
+        </div>
+        <!-- OPTIONS SECTION #BEGINING -->
+        <div class="question-option-container">
+          <!-- OPTION A -->
+            <span class="question-option"> A </span>
+            <p>alkanone</p>
+        </div>
+                    <!-- OPTION B -->
+        <div class="question-option-container">
+            <span class="question-option">B</span>
+            <p>alkyne</p>
+        </div>
+                    <!-- OPTION C -->
+        <div class="question-option-container">
+            <span class="question-option">C</span>
+            <p>alkanoic acid</p>
+        </div>
+                    <!-- OPTION D-->
+        <div class="question-option-container">
+            <span class="question-option">D</span>
+            <p>alkanal</p>
+        </div>
+        <!-- OPTIONS #END -->
+
+        <!-- BUTTON TO DISPLAY THE ANSWER AND REVIEW/ COMMENT -->
+        <input type="checkbox" id="check-two">
+        <label for="check-two" id="viewans">
+            <b class="fa fa-info"> Answer </b>
+        </label>
+
+            <!-- ANSWER SECTION -->
+        <div class="answer">
+            <hr />
+            <p><strong>Correct Option:</strong> A</p>
+            <br>
+            <!-- COMMENT/ SOLUTION TO THE ANSWERS -->
+            <strong>Solution</strong>
+            <p>With a suitable oxidising agent (such as acidified dichromate solution, or, acidified permanganate solution),&nbsp;<strong>secondary alkanols</strong>&nbsp;(alcohols)&nbsp;<strong>can be oxidised</strong>&nbsp;to alkanones (ketones).</p>
+        </div>
+        <br>
+    </div>
+                <!-- QUESTION # END -->
+    <!-- QUESTION #BEGINING -->
+    <div class="Question-card">
+        <div class="question-container" id="question-container">
+            <span class="question-number">3</span>
+            <p class="question-text">A second alkanol can be oxidized to give an</p>
+        </div>
+        <!-- OPTIONS SECTION #BEGINING -->
+        <div class="question-option-container">
+          <!-- OPTION A -->
+            <span class="question-option"> A </span>
+            <p>alkanone</p>
+        </div>
+                    <!-- OPTION B -->
+        <div class="question-option-container">
+            <span class="question-option">B</span>
+            <p>alkyne</p>
+        </div>
+                    <!-- OPTION C -->
+        <div class="question-option-container">
+            <span class="question-option">C</span>
+            <p>alkanoic acid</p>
+        </div>
+                    <!-- OPTION D-->
+        <div class="question-option-container">
+            <span class="question-option">D</span>
+            <p>alkanal</p>
+        </div>
+        <!-- OPTIONS #END -->
+
+        <!-- BUTTON TO DISPLAY THE ANSWER AND REVIEW/ COMMENT -->
+        <input type="checkbox" id="check-three">
+        <label for="check-three" id="viewans">
+            <b class="fa fa-info"> Answer </b>
+        </label>
+
+            <!-- ANSWER SECTION -->
+        <div class="answer">
+            <hr />
+            <p><strong>Correct Option:</strong> A</p>
+            <br>
+            <!-- COMMENT/ SOLUTION TO THE ANSWERS -->
+            <strong>Solution</strong>
+            <p>With a suitable oxidising agent (such as acidified dichromate solution, or, acidified permanganate solution),&nbsp;<strong>secondary alkanols</strong>&nbsp;(alcohols)&nbsp;<strong>can be oxidised</strong>&nbsp;to alkanones (ketones).</p>
+        </div>
+        <br>
+    </div>
+                <!-- QUESTION # END -->
+    <!-- QUESTION #BEGINING -->
+    <div class="Question-card">
+        <div class="question-container" id="question-container">
+            <span class="question-number">4</span>
+            <p class="question-text">A second alkanol can be oxidized to give an</p>
+        </div>
+        <!-- OPTIONS SECTION #BEGINING -->
+        <div class="question-option-container">
+          <!-- OPTION A -->
+            <span class="question-option"> A </span>
+            <p>alkanone</p>
+        </div>
+                    <!-- OPTION B -->
+        <div class="question-option-container">
+            <span class="question-option">B</span>
+            <p>alkyne</p>
+        </div>
+                    <!-- OPTION C -->
+        <div class="question-option-container">
+            <span class="question-option">C</span>
+            <p>alkanoic acid</p>
+        </div>
+                    <!-- OPTION D-->
+        <div class="question-option-container">
+            <span class="question-option">D</span>
+            <p>alkanal</p>
+        </div>
+        <!-- OPTIONS #END -->
+
+        <!-- BUTTON TO DISPLAY THE ANSWER AND REVIEW/ COMMENT -->
+        <input type="checkbox" id="check-four">
+        <label for="check-four" id="viewans">
+            <b class="fa fa-info"> Answer </b>
+        </label>
+
+            <!-- ANSWER SECTION -->
+        <div class="answer">
+            <hr />
+            <p><strong>Correct Option:</strong> A</p>
+            <br>
+            <!-- COMMENT/ SOLUTION TO THE ANSWERS -->
+            <strong>Solution</strong>
+            <p>With a suitable oxidising agent (such as acidified dichromate solution, or, acidified permanganate solution),&nbsp;<strong>secondary alkanols</strong>&nbsp;(alcohols)&nbsp;<strong>can be oxidised</strong>&nbsp;to alkanones (ketones).</p>
+        </div>
+        <br>
+    </div>
+                <!-- QUESTION # END -->
+
+    <!-- QUESTION #BEGINING -->
+    <div class="Question-card">
+        <div class="question-container" id="question-container">
+            <span class="question-number">5</span>
+            <p class="question-text">A second alkanol can be oxidized to give an</p>
+        </div>
+        <!-- OPTIONS SECTION #BEGINING -->
+        <div class="question-option-container">
+          <!-- OPTION A -->
+            <span class="question-option"> A </span>
+            <p>alkanone</p>
+        </div>
+                    <!-- OPTION B -->
+        <div class="question-option-container">
+            <span class="question-option">B</span>
+            <p>alkyne</p>
+        </div>
+                    <!-- OPTION C -->
+        <div class="question-option-container">
+            <span class="question-option">C</span>
+            <p>alkanoic acid</p>
+        </div>
+                    <!-- OPTION D-->
+        <div class="question-option-container">
+            <span class="question-option">D</span>
+            <p>alkanal</p>
+        </div>
+        <!-- OPTIONS #END -->
+
+        <!-- BUTTON TO DISPLAY THE ANSWER AND REVIEW/ COMMENT -->
+        <input type="checkbox" id="check-five">
+        <label for="check-five" id="viewans">
+            <b class="fa fa-info"> Answer </b>
+        </label>
+
+            <!-- ANSWER SECTION -->
+        <div class="answer">
+            <hr />
+            <p><strong>Correct Option:</strong> A</p>
+            <br>
+            <!-- COMMENT/ SOLUTION TO THE ANSWERS -->
+            <strong>Solution</strong>
+            <p>With a suitable oxidising agent (such as acidified dichromate solution, or, acidified permanganate solution),&nbsp;<strong>secondary alkanols</strong>&nbsp;(alcohols)&nbsp;<strong>can be oxidised</strong>&nbsp;to alkanones (ketones).</p>
+        </div>
+        <br>
+    </div>
+                <!-- QUESTION # END -->
+
+    <!-- QUESTION #BEGINING -->
+    <div class="Question-card">
+        <div class="question-container" id="question-container">
+            <span class="question-number">6</span>
+            <p class="question-text">A second alkanol can be oxidized to give an</p>
+        </div>
+        <!-- OPTIONS SECTION #BEGINING -->
+        <div class="question-option-container">
+          <!-- OPTION A -->
+            <span class="question-option"> A </span>
+            <p>alkanone</p>
+        </div>
+                    <!-- OPTION B -->
+        <div class="question-option-container">
+            <span class="question-option">B</span>
+            <p>alkyne</p>
+        </div>
+                    <!-- OPTION C -->
+        <div class="question-option-container">
+            <span class="question-option">C</span>
+            <p>alkanoic acid</p>
+        </div>
+                    <!-- OPTION D-->
+        <div class="question-option-container">
+            <span class="question-option">D</span>
+            <p>alkanal</p>
+        </div>
+        <!-- OPTIONS #END -->
+
+        <!-- BUTTON TO DISPLAY THE ANSWER AND REVIEW/ COMMENT -->
+        <input type="checkbox" id="check-six">
+        <label for="check-six" id="viewans">
+            <b class="fa fa-info"> Answer </b>
+        </label>
+
+            <!-- ANSWER SECTION -->
+        <div class="answer">
+            <hr />
+            <p><strong>Correct Option:</strong> A</p>
+            <br>
+            <!-- COMMENT/ SOLUTION TO THE ANSWERS -->
+            <strong>Solution</strong>
+            <p>With a suitable oxidising agent (such as acidified dichromate solution, or, acidified permanganate solution),&nbsp;<strong>secondary alkanols</strong>&nbsp;(alcohols)&nbsp;<strong>can be oxidised</strong>&nbsp;to alkanones (ketones).</p>
+        </div>
+        <br>
+    </div>
+                <!-- QUESTION # END -->
+    <!-- QUESTION #BEGINING -->
+    <div class="Question-card">
+        <div class="question-container" id="question-container">
+            <span class="question-number">7</span>
+            <p class="question-text">A second alkanol can be oxidized to give an</p>
+        </div>
+        <!-- OPTIONS SECTION #BEGINING -->
+        <div class="question-option-container">
+          <!-- OPTION A -->
+            <span class="question-option"> A </span>
+            <p>alkanone</p>
+        </div>
+                    <!-- OPTION B -->
+        <div class="question-option-container">
+            <span class="question-option">B</span>
+            <p>alkyne</p>
+        </div>
+                    <!-- OPTION C -->
+        <div class="question-option-container">
+            <span class="question-option">C</span>
+            <p>alkanoic acid</p>
+        </div>
+                    <!-- OPTION D-->
+        <div class="question-option-container">
+            <span class="question-option">D</span>
+            <p>alkanal</p>
+        </div>
+        <!-- OPTIONS #END -->
+
+        <!-- BUTTON TO DISPLAY THE ANSWER AND REVIEW/ COMMENT -->
+        <input type="checkbox" id="check-seven">
+        <label for="check-seven" id="viewans">
+            <b class="fa fa-info"> Answer </b>
+        </label>
+
+            <!-- ANSWER SECTION -->
+        <div class="answer">
+            <hr />
+            <p><strong>Correct Option:</strong> A</p>
+            <br>
+            <!-- COMMENT/ SOLUTION TO THE ANSWERS -->
+            <strong>Solution</strong>
+            <p>With a suitable oxidising agent (such as acidified dichromate solution, or, acidified permanganate solution),&nbsp;<strong>secondary alkanols</strong>&nbsp;(alcohols)&nbsp;<strong>can be oxidised</strong>&nbsp;to alkanones (ketones).</p>
+        </div>
+        <br>
+    </div>
+                <!-- QUESTION # END -->
+    <!-- QUESTION #BEGINING -->
+    <div class="Question-card">
+        <div class="question-container" id="question-container">
+            <span class="question-number">8</span>
+            <p class="question-text">A second alkanol can be oxidized to give an</p>
+        </div>
+        <!-- OPTIONS SECTION #BEGINING -->
+        <div class="question-option-container">
+          <!-- OPTION A -->
+            <span class="question-option"> A </span>
+            <p>alkanone</p>
+        </div>
+                    <!-- OPTION B -->
+        <div class="question-option-container">
+            <span class="question-option">B</span>
+            <p>alkyne</p>
+        </div>
+                    <!-- OPTION C -->
+        <div class="question-option-container">
+            <span class="question-option">C</span>
+            <p>alkanoic acid</p>
+        </div>
+                    <!-- OPTION D-->
+        <div class="question-option-container">
+            <span class="question-option">D</span>
+            <p>alkanal</p>
+        </div>
+        <!-- OPTIONS #END -->
+
+        <!-- BUTTON TO DISPLAY THE ANSWER AND REVIEW/ COMMENT -->
+        <input type="checkbox" id="check-eight">
+        <label for="check-eight" id="viewans">
+            <b class="fa fa-info"> Answer </b>
+        </label>
+
+            <!-- ANSWER SECTION -->
+        <div class="answer">
+            <hr />
+            <p><strong>Correct Option:</strong> A</p>
+            <br>
+            <!-- COMMENT/ SOLUTION TO THE ANSWERS -->
+            <strong>Solution</strong>
+            <p>With a suitable oxidising agent (such as acidified dichromate solution, or, acidified permanganate solution),&nbsp;<strong>secondary alkanols</strong>&nbsp;(alcohols)&nbsp;<strong>can be oxidised</strong>&nbsp;to alkanones (ketones).</p>
+        </div>
+        <br>
+    </div>
+                <!-- QUESTION # END -->
+
+    <!-- QUESTION #BEGINING -->
+    <div class="Question-card">
+        <div class="question-container" id="question-container">
+            <span class="question-number">9</span>
+            <p class="question-text">A second alkanol can be oxidized to give an</p>
+        </div>
+        <!-- OPTIONS SECTION #BEGINING -->
+        <div class="question-option-container">
+          <!-- OPTION A -->
+            <span class="question-option"> A </span>
+            <p>alkanone</p>
+        </div>
+                    <!-- OPTION B -->
+        <div class="question-option-container">
+            <span class="question-option">B</span>
+            <p>alkyne</p>
+        </div>
+                    <!-- OPTION C -->
+        <div class="question-option-container">
+            <span class="question-option">C</span>
+            <p>alkanoic acid</p>
+        </div>
+                    <!-- OPTION D-->
+        <div class="question-option-container">
+            <span class="question-option">D</span>
+            <p>alkanal</p>
+        </div>
+        <!-- OPTIONS #END -->
+
+        <!-- BUTTON TO DISPLAY THE ANSWER AND REVIEW/ COMMENT -->
+        <input type="checkbox" id="check-nine">
+        <label for="check-nine" id="viewans">
+            <b class="fa fa-info"> Answer </b>
+        </label>
+
+            <!-- ANSWER SECTION -->
+        <div class="answer">
+            <hr />
+            <p><strong>Correct Option:</strong> A</p>
+            <br>
+            <!-- COMMENT/ SOLUTION TO THE ANSWERS -->
+            <strong>Solution</strong>
+            <p>With a suitable oxidising agent (such as acidified dichromate solution, or, acidified permanganate solution),&nbsp;<strong>secondary alkanols</strong>&nbsp;(alcohols)&nbsp;<strong>can be oxidised</strong>&nbsp;to alkanones (ketones).</p>
+        </div>
+        <br>
+    </div>
+                <!-- QUESTION # END -->
+                 
+    <!-- QUESTION #BEGINING -->
+    <div class="Question-card">
+        <div class="question-container" id="question-container">
+            <span class="question-number">10</span>
+            <p class="question-text">A second alkanol can be oxidized to give an</p>
+        </div>
+        <!-- OPTIONS SECTION #BEGINING -->
+        <div class="question-option-container">
+          <!-- OPTION A -->
+            <span class="question-option"> A </span>
+            <p>alkanone</p>
+        </div>
+                    <!-- OPTION B -->
+        <div class="question-option-container">
+            <span class="question-option">B</span>
+            <p>alkyne</p>
+        </div>
+                    <!-- OPTION C -->
+        <div class="question-option-container">
+            <span class="question-option">C</span>
+            <p>alkanoic acid</p>
+        </div>
+                    <!-- OPTION D-->
+        <div class="question-option-container">
+            <span class="question-option">D</span>
+            <p>alkanal</p>
+        </div>
+        <!-- OPTIONS #END -->
+
+        <!-- BUTTON TO DISPLAY THE ANSWER AND REVIEW/ COMMENT -->
+        <input type="checkbox" id="check-ten">
+        <label for="check-ten" id="viewans">
+            <b class="fa fa-info"> Answer </b>
+        </label>
+
+            <!-- ANSWER SECTION -->
+        <div class="answer">
+            <hr />
+            <p><strong>Correct Option:</strong> A</p>
+            <br>
+            <!-- COMMENT/ SOLUTION TO THE ANSWERS -->
+            <strong>Solution</strong>
+            <p>With a suitable oxidising agent (such as acidified dichromate solution, or, acidified permanganate solution),&nbsp;<strong>secondary alkanols</strong>&nbsp;(alcohols)&nbsp;<strong>can be oxidised</strong>&nbsp;to alkanones (ketones).</p>
+        </div>
+        <br>
+    </div>
+                <!-- QUESTION # END -->
+
+   
+    </section>
+</body>
