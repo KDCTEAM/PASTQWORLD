@@ -351,16 +351,37 @@
 		<p class="secondp">Textbooks</p>
 	</div>
 </div>
-<center>
-	<div class="subs" id="fsubs">
-		<div class="subdiv" id="fsubdiv">
-			<p class="subp1">Subscribe to PastqWorld</p>
-			<p class="subp2">Subscribe to stay updated on  various ranking examinations, scholarships, latest news, free courses and different textbooks</p>
-			<input type="email" placeholder="kukuri@gmail.com" class="subinput" id="fsubinput">
-			<a href="#"><p class="subp3">Subscribe</p></a>
-		</div>
-	</div>
-</center>
+<body>
+    <div class="form-wrapper">
+        <div class="form-container">
+            <h1 class="form-title">Subscribe To Get Weekly Updates For Free</h1>
+            <p class="form-subtitle">Join 9,000+ willing learners across the world.</p>
+            
+            <form action="https://gmail.us21.list-manage.com/subscribe/post?u=b961a6f4b9c2b4b1464b8860c&amp;id=38f7325852&amp;f_id=006987e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <div class="input-group">
+                    <label for="mce-FNAME">Your Name</label>
+                    <input type="text" id="mce-FNAME" name="FNAME" placeholder="John Doe" required>
+                </div> 
+
+                <div class="input-group">
+                    <label for="mce-EMAIL">Email Address</label>
+                    <input type="email" id="mce-EMAIL" name="EMAIL" placeholder="john@example.com" required>
+                </div> 
+
+                <button type="submit" id="mc-embedded-subscribe" class="submit-btn">Subscribe Now</button>
+
+                <!-- Hidden field to avoid bot signups -->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_b961a6f4b9c2b4b1464b8860c_38f7325852" tabindex="-1" value="">
+                </div>
+
+                <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>
+            </form>
+        </div>
+    </div>
 <div class="footer" id="footer">
 	<div class="fsect1">
 		<div><a href="about-page.html" class="fdsm">About Us</a></div>
@@ -925,57 +946,92 @@
 	.reputations .firstp{
 	
 	}
-	.subs{
-	background : #cdedfe;
-	width : 86%;
-	height : 280px;
-	border-radius : 10px 10px 40px 50% ;
-	padding : 10px ;
-	margin: 180px 0
-	}
-	.subdiv{
-	width : 85.5% ;
-	background : #fff ;
-	height : 328px ;
-	border-radius : 10px 40px;
-	padding : 20px ;
-	box-shadow : 1px 1px 14px #e6e6e6 
-	}
-	.subp1{
-	font-size : 20px ;
-	font-weight : bolder;
-	margin : 10px 0 0 0 ;
-	padding : 8px 
-	}
-	.subp2{
-	color : #666 ;
-	padding : 6px  ;
-	text-align : left ;
-	font-size : 14px 
-	}
-	.subinput {
-	height : 50px ;
-	width : 96%;
-	margin : 1%;
-	margin-top : 12px;
-	padding : 10px ;
-	outline: none;
-	border :none ;
-	background : #eaeaea ;
-	border-radius : 10px ;
-	}
-	.subp3{
-	background : #83d1fc;
-	height : 30px ;
-	width : 40%;
-	float : right ;
-	border-radius : 4px ;
-	text-align :center ;
-	padding : 10px 0 0 0;
-	color : #fff;
-	font-weight : 500;
-	margin : 25px 15px 0 0
-	}
+        /* Basic Reset */
+        * {
+            margin: 0 4px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Form Wrapper */
+        .form-wrapper {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            border: 2px solid #cfeaf8;
+        }
+
+        /* Form Title */
+        .form-title {
+            font-size: 22px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Form Subtitle */
+        .form-subtitle {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Input Group */
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .input-group input:focus {
+            border-color: #007BFF;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #51bffb;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #83d1fc;
+        }
 	.fsect1{
 	margin: 0px 40px 0 0;
 	float : right ;
@@ -1033,5 +1089,15 @@
 	let nav = document.getleEmentByld("slide");
 	nav.classList.add("hide")
 	}
-	
+
+	 <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">(function($) {
+        window.fnames = new Array(); 
+        window.ftypes = new Array();
+        fnames[0]='EMAIL';ftypes[0]='email';
+        fnames[1]='FNAME';ftypes[1]='text';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
+</body>
 </script>
