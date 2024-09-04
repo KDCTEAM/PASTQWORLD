@@ -351,6 +351,7 @@
 		<p class="secondp">Textbooks</p>
 	</div>
 </div>
+<center class="encloser"> 
 <div class="form-parent-container">
     <div class="form-wrapper">
         <div class="form-container">
@@ -383,6 +384,7 @@
         </div>
     </div>
 </div>
+</center>
 	<a href="Thank-you-for-subscribing.html" style="display:none">hjdj</a>
 <div class="footer" id="footer">
 	<div class="fsect1">
@@ -949,19 +951,22 @@
 	.reputations .firstp{
 	
 	}
-	
+	/* encloser */
+	.encloser{
+	    font-family: 'Helvetica Neue', Arial, sans-serif;
+	    display: flex;
+	    margin-top:200px 
+            
+	}
         /* parent container Styling */
         form-parent-container {
-	    font-family: 'Helvetica Neue', Arial, sans-serif;
             background-color: #f8f9fa;
-	    display: flex;
-	    justify-content: center;
-	    align-items: center;
+            height: 100vh;
         }
 
         /* Form Wrapper */
         .form-wrapper {
-            width: 100%;
+            width: 80%;
             max-width: 400px;
             padding: 20px;
             background-color: #ffffff;
@@ -989,7 +994,6 @@
         /* Input Group */
         .input-group {
             margin-bottom: 20px;
-	    margin-right: 25px:
         }
 
         .input-group label {
@@ -997,6 +1001,7 @@
             color: #555;
             margin-bottom: 5px;
             display: block;
+	    text-align: left;
         }
 
         .input-group input {
