@@ -1,6 +1,7 @@
-<?php include 'pastqworld-header.html'; ?>
+<?php include 'pastqworld-header.php'; ?>
 <!DOCTYPE html><html lang="en">
-<head> <!-- Google tag (gtag.js) -->
+<head></head>
+ <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EM8BTTZNLS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -26,7 +27,7 @@
 			<a href="https://apply.umanitoba.ca/portal/ug_app"><p>click here to apply</p></a>
 		</div>
 </body>
-
+</html>
 <style>
 	body{
 		font-family: 'Open Sans', sans-serif;
